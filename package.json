@@ -1,0 +1,26 @@
+{
+  "name": "Fraudbook",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "babel-cli": "6.14.0",
+    "babel-core": "6.14.0",
+    "babel-preset-es2015": "6.14.0",
+    "babel-preset-stage-0": "6.5.0",
+    "cookie-parser": "^1.4.3",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn run app\" \"yarn run client\" ",
+    "app": "WEB_PORT=3001 API_PORT=5000 ./node_modules/.bin/nodemon orchestrator/app.js",
+    "client": "babel-node orchestrator/start-client.js",
+    "prod": "yarn run build && NODE_ENV=production WEB_PORT=3001 API_PORT=5000 node orchestrator/app",
+    "run_prod": "NODE_ENV=production WEB_PORT=3001 API_PORT=5000 node orchestrator/app",
+    "build": "cd client && yarn run build",
+    "setup": "yarn install && cd orchestrator && yarn install && cd ../client && yarn install",
+    "test": "cd orchestrator && yarn test"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0"
+  }
+}
