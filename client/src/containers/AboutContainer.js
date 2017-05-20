@@ -3,7 +3,7 @@ import { IndexLink, Link } from 'react-router'
 
 export const About = () => (
   <div>
-    <h1>About POS</h1>
+    <h1>About Mural Locator</h1>
   </div>
 )
 
