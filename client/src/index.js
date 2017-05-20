@@ -5,10 +5,6 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
 import configureStore from './store/configure-store';
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import muiThemeLight from './config/material-ui/lightBaseTheme';
-
 import App from './App';
 import Home from './containers/HomeContainer';
 import About from './containers/AboutContainer';
