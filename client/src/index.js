@@ -21,9 +21,7 @@ const store = configureStore();
 
 const Main = (props) => (
   <Provider store={store}>
-    <MuiThemeProvider muiTheme={getMuiTheme(muiThemeLight)}>
-      <App children={props.children}/>
-    </MuiThemeProvider>
+    <App children={props.children}/>
   </Provider>
 )
 
