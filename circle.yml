@@ -3,4 +3,4 @@ dependencies:
     - yarn
 test:
   override:
-    - yarn test
+    - yarn test --production=false
