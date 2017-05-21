@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import * as homeActions from '../actions/home-actions';
 
 class Home extends Component {
   render() {
